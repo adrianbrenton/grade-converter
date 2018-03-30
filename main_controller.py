@@ -1,6 +1,9 @@
 """This is the main module of the application.
 It acts as as a 'middle man' between the model and view files
 """
+
+# TODO: convertButton needs to be disabled until output_directory chosen
+
 from view import main_view
 from model import main_model
 from tkinter import filedialog
