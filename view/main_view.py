@@ -1,3 +1,7 @@
+"""This module uses tkinter to create the main gui window"""
+
+# TODO: Add widget to display all currently selected files
+
 from tkinter import *
 
 root = Tk()
