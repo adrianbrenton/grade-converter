@@ -1,6 +1,6 @@
 from glob import glob
 
-from model import test_grade_converter as converter
+from model import csv_converter as converter
 
 
 def files_in_directories(directory_set):
