@@ -1,6 +1,6 @@
 from glob import glob
 
-from model import csv_converter as converter
+from app.model import csv_converter as converter
 
 
 def files_in_directories(directory_set):
