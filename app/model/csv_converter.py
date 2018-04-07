@@ -8,16 +8,21 @@
 import csv
 from math import ceil
 from os.path import splitext
+from typing import Union
+
 import xlsxwriter
 
 
-def percent_to_float(percentage):
+def percent_to_float(percentage: Union[int, float, str]) -> float:
     """Return a float by stripping whitespace and percent symbol"""
     return float(str(percentage).strip().rstrip('%').rstrip())
 
 
-def converted_score(score):
-    """Return the adjusted score as a float, calculated from score argument"""
+def converted_score(score: float) -> int:
+    """Return the adjusted score as a float, calculated from score argument
+
+    score should be given as an integer
+    """
     # level = [i for i, boundary in enumerate]
     for i, boundary in enumerate(gradeBoundaries):
         if boundary > score:
