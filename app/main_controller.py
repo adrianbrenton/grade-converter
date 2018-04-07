@@ -4,10 +4,11 @@ It acts as as a 'middle man' between the model and view files
 
 # TODO: convertButton needs to be disabled until output_directory chosen
 
+import sys
+
 from tkinter import filedialog
 
 from model import main_model
-
 from app.view import main_view
 
 
@@ -33,6 +34,7 @@ def select_output_directory():
         main_view.outputDirectoryLabel.config(text="Output to: {}".format(
             folder_name))
 
+print(sys.path)
 
 main_view.openFileButton.config(command=run_open_file_dialog)
 main_view.openFolderButton.config(command=run_open_folder_dialog)
