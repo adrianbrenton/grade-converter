@@ -2,8 +2,7 @@
 
 # TODO: Add widget to display all currently selected files
 # TODO: Add title to the main window to replace "tk"
-
-from tkinter import *
+from tkinter import Tk, Label, Button, BOTTOM
 
 root = Tk()
 

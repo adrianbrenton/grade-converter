@@ -1,9 +1,6 @@
 """Adjust grade spreadsheets based on new grade boundaries"""
 
 # TODO Create Docstrings
-# TODO Add this module to the model directory (because this is part of the business logic)
-# TODO (create model, view and controller directories)
-# TODO: change all output directories to be specified by user
 
 import csv
 from math import ceil
@@ -18,11 +15,8 @@ def percent_to_float(percentage: Union[int, float, str]) -> float:
     return float(str(percentage).strip().rstrip('%').rstrip())
 
 
-def converted_score(score: float) -> int:
-    """Return the adjusted score as a float, calculated from score argument
-
-    score should be given as an integer
-    """
+def converted_score(score: float) -> float:
+    """Return the adjusted score as a float rounded up to 2 decimal places"""
     # level = [i for i, boundary in enumerate]
     for i, boundary in enumerate(gradeBoundaries):
         if boundary > score:
@@ -36,7 +30,7 @@ def converted_score(score: float) -> int:
     return new_score
 
 
-def operate_on_line(line, adjuster=converted_score):
+def operate_on_line(line: list, adjuster=converted_score):
     """Return a line from the csv with the student's score converted"""
     score = percent_to_float(line[2])
     new_line = line[:2]
