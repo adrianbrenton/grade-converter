@@ -42,12 +42,11 @@ def operate_on_csv(csv_path, output_dir=''):
     """Opens the given csv file and calls operate_on_line() on each line"""
     with open(csv_path, 'r') as scoresFile:
         reader = csv.reader(scoresFile)
-        output_file_name = splitext(scoresFile.name)[0].split('/')[
-                               -1] + '_adjusted'
+        output_file_name = splitext(scoresFile.name)[0].split('/')[-1] \
+            + '_adjusted'
         list_of_rows = list(reader)[2:]
 
-    new_rows_list = [operate_on_line(line) for i, line in enumerate(
-        list_of_rows[1:])]  # TODO: is this enumerate() necessary?
+    new_rows_list = [operate_on_line(line) for line in list_of_rows[1:]]
 
     workbook = xlsxwriter.Workbook(
         output_dir + '/' + output_file_name + '.xlsx')
