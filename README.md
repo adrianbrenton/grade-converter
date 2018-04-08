@@ -42,4 +42,6 @@ spreadsheet.
 
 - Add tkinter widget to display all currently selected files and directories
  to be adjusted.
+ 
+- Think of a better name for app.
 
