@@ -1,7 +1,7 @@
 # grade-converter
 
-To try out this desktop app without bundling, simply run app/main_controller
-.py using python 3.5.
+To try out this desktop app without bundling, simply run app/main_controller.py 
+using python 3.5.
 
 Please note: The lack of classes is intentional - modules are more 
 appropriate ('pythonic') for this project because all the 'would-be' classes
