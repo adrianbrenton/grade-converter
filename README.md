@@ -1,7 +1,8 @@
 # grade-converter
 
-To try out this desktop app without bundling, simply run app/main_controller.py 
-using python 3.5.
+To try out this desktop app without bundling, simply navigate to the root 
+directory of the project and run the following command:
+python3.5 -m app.main_controller.py
 
 Please note: The lack of classes is intentional - modules are more 
 appropriate ('pythonic') for this project because all the 'would-be' classes
@@ -11,19 +12,18 @@ This application adjusts students' test scores from a system of uneven grade
 boundaries to a system of even grade boundaries. A teacher from the US 
 requested that I make this tool for her. 
 
-In its current form, the app only works on csv files of a very specific 
-layout and ou. This layout has been chosen to match the csv files that the 
-teacher 
-needs the app to work onb(deadline was ASAP). It is my future goal to make 
-the app accept a wider range of layouts. For a full list of intended 
-future improvements, see below.
+This is an ongoing project. In its current form, the app only works on csv 
+files of a very specific layout. This layout has been chosen to match the 
+csv files that the teacher needs the app to work on (the deadline was ASAP).
+It is my future goal to make the app accept a wider range of spreadsheet 
+layouts and file formats.
 
 To be bundled with py2app v0.13 (v0.14 has a bug that makes it incompatible 
 with tkinter).
 
-This is an ongoing project.
 
-#Future Improvements (TODO)
+
+#Future Improvements (TODO list)
 - Add installer(s) for distribution.
 
 - Add more tests.
