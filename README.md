@@ -23,7 +23,7 @@ with tkinter).
 
 
 
-#Future Improvements (TODO list)
+# Future Improvements (TODO list)
 - Add installer(s) for distribution.
 
 - Add more tests.
