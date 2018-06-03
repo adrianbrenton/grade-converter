@@ -8,23 +8,25 @@ Please note: The lack of classes is intentional - modules are more
 appropriate ('pythonic') for this project because all the 'would-be' classes
 follow the Singleton design pattern (multiple instances would be unnecessary).
 
+# Description
 This application adjusts students' test scores from a system of uneven grade 
 boundaries to a system of even grade boundaries. A teacher from the US 
 requested that I make this tool for her. 
 
-This is an ongoing project. In its current form, the app only works on csv 
-files of a very specific layout. This layout has been chosen to match the 
-csv files that the teacher needs the app to work on (the deadline was ASAP).
-It is my future goal to make the app accept a wider range of spreadsheet 
-layouts and file formats.
+This application is complete enough to satisfy its original intended purpose. 
+However, for me the project is still ongoing. In its current form, the app 
+only works on csv files of a very specific layout. This layout has been 
+chosen to match the csv files that the teacher (client) needs for the app to 
+work on (the deadline was ASAP). It is my future goal to make the app accept 
+a wider range of spreadsheet layouts and file formats.
 
+# Bundling
 To be bundled with py2app v0.13 (v0.14 has a bug that makes it incompatible 
 with tkinter).
 
 
-
 # Future Improvements (TODO list)
-- Add installer(s) for distribution.
+- Add installer(s) for easier distribution.
 
 - Add more tests.
 
